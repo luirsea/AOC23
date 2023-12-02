@@ -45,6 +45,7 @@ class Program
         var flag = day switch {
             2201 => Day2203.GetFlag(input),
             1 => Day01.GetFlag(input.Split('\n')),
+            2 => Day02.GetFlag(input.Split('\n')),
             _ => ("No flags yet :(", null),
         };
 
