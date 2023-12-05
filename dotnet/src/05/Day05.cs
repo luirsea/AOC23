@@ -56,8 +56,8 @@ public class Day05{
         var seedRanges = new List<Range>();
         for (var i = 0; i < seeds.Count() - 1; i+=2 ){
             seedRanges.Add(new Range{
-                from = seeds[0],
-                to = seeds[0] + seeds[1],
+                from = seeds[i],
+                to = seeds[i] + seeds[i+1],
             });
         }
 
