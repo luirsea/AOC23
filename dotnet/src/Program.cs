@@ -51,6 +51,7 @@ class Program
             4 => Day04.GetFlag(input.Split('\n')),
             5 => Day05.GetFlag(input.Split('\n')),
             6 => Day06.GetFlag(input),
+            8 => Day08.GetFlag(input.Split('\n')),
             9 => Day09.GetFlag(input.Split('\n')),
             _ => ("No flags yet :(", null),
         };
