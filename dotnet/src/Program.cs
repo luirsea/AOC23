@@ -42,6 +42,7 @@ class Program
             }
         }
 
+        var start = DateTime.Now;
         var flag = day switch {
             2201 => Day2203.GetFlag(input),
             1 => Day01.GetFlag(input.Split('\n')),
@@ -50,8 +51,10 @@ class Program
             4 => Day04.GetFlag(input.Split('\n')),
             5 => Day05.GetFlag(input.Split('\n')),
             6 => Day06.GetFlag(input),
+            9 => Day09.GetFlag(input.Split('\n')),
             _ => ("No flags yet :(", null),
         };
+        var end = DateTime.Now;
 
         Console.WriteLine("\n\n");
 
@@ -62,6 +65,8 @@ class Program
         if (flag.Item2 != null){
             Console.WriteLine($"Flag 2 found as well!\t{flag.Item2}");
         }
+
+        Console.WriteLine($"Time taken: {(end-start).TotalMilliseconds} ms");
     }
 
     public static void DebugLine(string msg){
