@@ -57,6 +57,7 @@ class Program
             10 => Day10.GetFlag(input),
             11 => Day11.GetFlag(input),
             12 => Day12.GetFlag(input.Split('\n')),
+            14 => Day14.GetFlag(input),
             _ => ("No flags yet :(", null),
         };
         var end = DateTime.Now;
